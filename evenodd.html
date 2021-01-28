@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .next{
+        float:right;
+        color:blue;
+        font-size: 25px;
+    }
+    
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Even or Odd number</h1>
+    <label>Enter a number</label>
+    <input type="number"name=""id="oddeven"onkeyup="ischeck()"><span id="show"></span>
+    <h1>CODE:</h1>
+    <P>import java.util.Scanner;<br>
+        public class Evenodd{<br>
+            public static void main(String[] args) {<br>
+        
+                Scanner sc=new Scanner(System.in);<br>
+                int n;<br>
+                System.out.println("Enter a number");<br>
+                n=sc.nextInt();<br>
+                if(n%2==0)<br>
+                    System.out.println("Even number");<br>
+                else<br>
+                    System.out.println("Odd number");<br>
+                            
+                
+            }<br>
+            
+        }<br>
+        </P>
+        <div class="next">
+            <p><a href="page2.html">Go to previous page<-></a></p>
+        </div> 
+    
+    <script>
+        function ischeck(){
+            var num=document.getElementById("oddeven").value;
+            if(num%2==0){
+                document.getElementById('show').innerHTML="hurrry!number " +num+ "is even";
+            }
+                else{
+                    document.getElementById('show').innerHTML="oh no!number " +num+ "is odd";
+
+                }
+
+            }
+        
+    </script>
+    </body>
+

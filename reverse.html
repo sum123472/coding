@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .next{
+            float:right;
+            color:blue;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<script>
+    function reverse(){
+        var n=document.getElementById("num").value;
+        var i,rem;
+        var rev=0;
+        for(i=n;i>0;i=parseInt(i/10)){
+            rem=i%10;
+            rev=rev*10+rem;
+        }
+        document.getElementById("show").innerHTML="Reverse of "+n+" is " +rev;
+
+    }
+</script>
+<body>
+    <h1>Reverse of a number</h1><br>
+    <label>Enter a number</label>
+    <input type="number"id="num"><br>
+    <input type="button"value="Show Result"onClick="reverse()"><br><span id="show"></span><br>
+    <h1>CODE:</h1><br>
+    <p>
+        import java.util.Scanner;<br>
+    public class Reverse {<br>
+    public static void main(String[] args) {<br>
+        int n;<br>   
+        Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter a number:");<br>
+        n=sc.nextInt();<br>
+        palindrome(n);<br>
+    }<br>
+    
+    public static void palindrome(int n)<br>
+    {<br>
+    int rev=0;<br>
+    
+    int rem;<br>
+    for(int i=n;i>0;i=i/10)<br>
+        {<br>
+            rem=i%10;<br>
+            rev=rev*10+rem;<br>  
+        }<br>
+    if(n==rev)<br>
+        System.out.println("Armstrong");<br>
+        
+    else<br>
+        System.out.println("not");<br>
+           
+}<br>
+}<br>
+
+        
+
+    </p>
+    <div class="next">
+        <p><a href="page2.html">Go to previous page<-></a></p>
+    </div>
+</body>
+</html>

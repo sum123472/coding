@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .next{
+            float:right;
+            color:blue;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<script>
+    function fact(){
+        var n=document.getElementById("frst").value;
+        var i;
+        var f=1;
+        for(i=1;i<=n;i++)
+        {
+            f=f*i;
+        }
+        document.getElementById("show").innerHTML="Factorial of " +n+" is " +f;
+    }
+</script>
+<body>
+    <h1>Factorial of given number</h1>
+    enter number<input type="number"id="frst"><br>
+    <input type="button"value="show result"onClick="fact()";/><br><span id="show"></span>
+    <h1>CODE:</h1>
+    <p>import java.util.Scanner;<br>
+        public class FACTORIAL {<br>
+            public static void main(String[] args) {<br>
+            
+        int n,f;<br>
+         Scanner sc=new Scanner(System.in);<br>
+        System.out.println("Enter  n number");<br>
+        n=sc.nextInt();<br>
+        f=fact(n);<br>
+        System.out.println("factorial is:" +f);<br>
+
+            }<br>
+         public static int fact(int n){<br>
+          int f=1; <br> 
+        for(int i=1 ;i<=n;i++){<br>
+        f=f*i;<br>
+        }<br>
+        return f;<br>
+        
+        }<br>
+
+        }<br>
+        
+        
+        </p>
+        <div class="next">
+            <p><a href="page2.html">Go to previous page<-></a></p>
+        </div>
+</body>
+</html>

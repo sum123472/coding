@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .next{
+            float:right;
+            color:blue;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<script>
+    function sum(){
+       var  number=document.getElementById("num").value;
+    
+        var rem;
+        for(i=number,s=0;i>0;i=parseInt(i/10)){
+             rem=i%10;
+            s=s+rem;
+        }
+        document.getElementById("show").innerHTML="Sum of " +number+ " is" +parseInt(s);
+
+    }
+</script>
+<body>
+    <h1 > Sum of given the number</h1>
+    <label>Enter a number</label>
+    <input type="number"id="num"><br>
+    <input type="button"value="show result"onClick="sum()";/><br><span id="show"></span><br>
+    <h1>CODE:</h1>
+    <p>import java.util.Scanner;
+        public class Sum_Of_Digit {<br>
+            public static void main(String[] args) {<br>
+                
+                Scanner sc=new Scanner(System.in);<br>
+                int n<br>
+                int sum=0;<br>
+                int rem;<br>
+                System.out.println("Enter a number");<br>
+                n=sc.nextInt();<br>
+                for(i=n;i>0;i=i/10){<br>
+                    rem=i%10;<br>
+                    sum=sum+rem;<br>
+                }<br>
+                System.out.println("Sum of digit of number" +sum);<br>
+                        
+                 }<br>
+        }<br>
+        </p>
+        <div class="next">
+            <p><a href="page2.html">Go to previous page<-></a></p>
+        </div>
+</body>
+
+</html>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .next{
+        float:right;
+        color:blue;
+        font-size: 25px;
+    }
+    
+</style>
+    
+</head>
+<script>
+    function highest(){
+        var a=document.getElementById('frst').value;
+        var b=document.getElementById('sec').value;
+        if(a>b){
+            document.getElementById('show').innerHTML= +a+ " is Higher than " +b;
+
+        }
+        else{
+        document.getElementById('show').innerHTML= +b+ " is Higher than " +a;
+        }
+            
+    }
+</script>
+<body>
+    <h1>Highest of two number</h1>
+    <form>
+    <table >
+    <tr>
+        <td>Enter first number</td>
+    <td><input type="number" id="frst"></td>
+    
+</tr>
+<tr>
+    <td>Enter second number</td>
+    <td><input type="number" id="sec"></td>
+    
+    </tr>
+    </table>
+    </form>
+    <input type="button" value="result"onclick="highest()"; /><br><span id="show"></span>
+    <h1>code:</h1>
+    <p>import java.util.Scanner;</p>
+      <p> public class HIGHEST{</p>
+          <p> public static void main(String[] args) {</p>
+                
+          <p > Scanner sc=new Scanner(System.in);</p></p>
+          <p> int a,b;</p>
+            
+         <p>  System.out.println("enter two number");</p>
+           <p> a=sc.nextInt();</p>
+           <p> b=sc.nextInt();</p>
+            <p>if(a>b)</p>
+<p>System.out.println("highest="+a);</p>
+               <p> else</p>
+              <p>  System.out.println("Highest="+b);</p>
+          <p>}</p>  
+        
+
+          <p>}</p> 
+          <div class="next">
+            <p><a href="page2.html">Go to previous page<-></a></p>
+        </div> 
+            
+        
+        
+    
+    
+</body>
+</html>
